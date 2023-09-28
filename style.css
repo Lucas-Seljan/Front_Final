@@ -78,6 +78,7 @@ li a:hover {
 .cover {
 
     margin: 1em 0.5em;
+    margin-top: 100px;
     display: flex;
     align-items: center;
 }
@@ -131,6 +132,7 @@ h2 {
     border-radius: 5px;
     transition: all 0.6s ease;
     margin: 0px 0.5em;
+    width: 100%;
 }
 @media(max-width: 1100px){
     .projects li{
@@ -159,9 +161,19 @@ h2 {
     width: 100%;
     text-align: center;
 }
-@media (max-width: 1100px) {
+@media (max-width: 768px) {
     .container{
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    .contact-setup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fa-brands {
+        font-size: 100px;
     }
 }
